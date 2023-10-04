@@ -1,0 +1,68 @@
+const Register = () => {
+  return (
+    <div>
+      <div className="hero min-h-screen bg-base-200">
+        <div className="hero-content flex-col  ">
+          <div className="text-center lg:text-left">
+            <h1 className="text-4xl font-bold"> Register now </h1>
+          </div>
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div className="card-body">
+              <form>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Your Name</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    className="input input-bordered"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Email</span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="email"
+                    name="email"
+                    className="input input-bordered"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Password</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="password"
+                    name="password"
+                    className="input input-bordered"
+                  />
+                  <label className="label">
+                    <a href="#" className="label-text-alt link link-hover">
+                      Forgot password?
+                    </a>
+                  </label>
+                </div>
+                <div className="form-control mt-6">
+                  <button className="btn btn-primary">Login</button>
+                </div>
+              </form>
+              <div>
+                <p>
+                  I Have an account, please?
+                  <span className="btn btn-link">Log in</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Register;
